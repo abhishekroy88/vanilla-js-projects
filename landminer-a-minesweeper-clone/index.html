@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landminer - A Minesweeper Clone</title>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="https://icons.iconarchive.com/icons/everaldo/crystal-clear/128/App-kmines-minesweeper-icon.png" type="image/x-icon">
+    <link 
+      rel="stylesheet" 
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" 
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" 
+      crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script defer src="./src/main.js"></script>
+  </head>
+
+  <body>
+    <div class="info-container">
+      <div class="header">
+        <h1>LANDMINER</h1>
+        <p>A Minesweeper Clone</p>
+      </div>
+
+      <div class="controls">
+        <p class="message">
+          YOU WIN
+        </p>
+        <div class="difficulty-controls">
+          <span class="difficulty-label">Difficulty</span>
+          <select class="difficulty">
+            <option value="0">Beginner</option>
+            <option value="1">Easy</option>
+            <option value="2" selected>Moderate</option>
+            <option value="3">Hard</option>
+            <option value="4">Extreme</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="trackers">
+        <div class="score-tracker"></div>
+        <button class="replay-button"><i class="fas fa-redo-alt"></i></button>
+        <div class="time-tracker"></div>
+      </div>
+    </div>
+    <div class="board"></div>
+  </body>
+</html>

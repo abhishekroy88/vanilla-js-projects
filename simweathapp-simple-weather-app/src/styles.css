@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #1a1a2e;
+    min-height: 100vh;
+    width: 800px;
+    margin: auto;
+    border: 1px solid;
+}
+
+header > * {
+    text-align: center;
+    padding: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.get-location-btn {
+    border: 1px solid #fff;
+    background-color: transparent;
+    display: block;
+    margin: 30px auto;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .get-location-btn:hover {
+        background-color: #fff;
+        color: #1a1a2e;
+        cursor: pointer;
+    }
+
+main * {
+    text-align: center;
+}
+
+main > * {
+    padding: 20px;
+}
+
+.location {
+    font-size: 3rem;
+    color: lime;
+}
+
+.temp-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temp-section > * {
+    padding: 0 50px;
+}
+
+.curr-temp {
+    font-size: 3rem;
+}
+
+.unit-toggler {
+    background-color: transparent;
+    border: none;
+    font-size: 90%;
+    color: #00b7c2;
+    margin-left: 5px;
+    outline: none;
+}
+
+    .unit-toggler:hover {
+        cursor: pointer;
+        color: #cffffe;
+    }
+
+.weather-icon {
+    width: 150px;
+}

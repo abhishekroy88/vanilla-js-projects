@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/weather.ico"
+      type="image/x-icon"
+    />
+    <title>SimWeathApp - Simple Weather App</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script defer src="./src/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>SimWeathApp</h1>
+      <p>
+        Clicking the button below will ask your permission to get your location.
+        <br />
+        Allow it in order to display weather data in your area.
+      </p>
+      <button class="get-location-btn">Display Weather in my area</button>
+    </header>
+
+    <main>
+      <section class="location-section">
+        <h2 class="location"></h2>
+      </section>
+
+      <section class="temp-section">
+        <h2 class="min-temp"></h2>
+        <h2 class="curr-temp"></h2>
+        <h2 class="max-temp"></h2>
+      </section>
+
+      <section class="weather-icon-section">
+        <img src="./src/images/weather.ico" alt="" class="weather-icon" />
+      </section>
+    </main>
+  </body>
+</html>

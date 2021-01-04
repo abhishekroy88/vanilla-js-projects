@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto Slab", serif;
+  background-image: url("./src/images/bg.jpg");
+  /* background-size: cover; */
+}
+
+.main-container {
+  width: 800px;
+  background-color: #4c4c4c;
+  color: #fff;
+  margin: auto;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.flex {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-top {
+  justify-content: flex-start;
+}
+
+header {
+  min-height: 30vh;
+  border-bottom: 2px solid #fff;
+  padding: 10px;
+}
+
+header i {
+  font-size: 2.5rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  line-height: 2;
+}
+
+header p {
+  font-size: 1.4rem;
+}
+
+main {
+  min-height: 70vh;
+}
+
+.search-controls {
+  text-align: center;
+  padding: 30px 0;
+}
+
+#search-box {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  width: 450px;
+  border-radius: 3px;
+  border: none;
+}
+
+.sep-container {
+  padding: 50px 0;
+  position: relative;
+}
+
+.sep-container::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 1px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.separator {
+  font-size: 1.4rem;
+  position: relative;
+  z-index: 1;
+  background-color: #4c4c4c;
+  width: 50px;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#search-random-btn {
+  font-size: 1.5rem;
+  background-color: transparent;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  border: none;
+  color: #19d3da;
+  cursor: pointer;
+}
+
+.search-result-single {
+  border: 1px solid;
+  margin: 15px;
+  background-color: #fff;
+  border-color: #fff;
+  color: #4c4c4c;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.search-result-single:hover {
+  cursor: pointer;
+  background-color: #4c4c4c;
+  border-color: #fff;
+  color: #fff;
+}
+
+.search-result-single > * {
+  padding: 10px;
+}
+
+.search-result-single > h3 {
+  font-size: 1.4rem;
+}
+
+.search-result-single > p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.error {
+  color: tomato;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+@media screen and (max-width: 850px) {
+  .main-container {
+    width: 95%;
+  }
+
+  #search-box {
+    width: 350px;
+  }
+}

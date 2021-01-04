@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./src/images/fav.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Know - Wiki Search Tool</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./src/main.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="flex flex-center">
+        <i class="fas fa-brain"></i>
+        <h1>Know.</h1>
+        <p>A Wikipedia Search Tool</p>
+      </header>
+
+      <main class="flex flex-center">
+        <section class="search-controls">
+          <a
+            href="https://en.wikipedia.org/wiki/Special:Random"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="search-random-btn"
+          >
+            Browse a Random Article
+          </a>
+
+          <div class="sep-container">
+            <p class="separator">or</p>
+          </div>
+
+          <input
+            type="text"
+            id="search-box"
+            placeholder="Search for something specific"
+            spellcheck="false"
+          />
+        </section>
+
+        <section class="search-results"></section>
+      </main>
+    </div>
+  </body>
+</html>

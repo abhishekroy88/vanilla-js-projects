@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  background-color: #222831;
+}
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  list-style-type: none;
+}
+
+.slide {
+  padding: 5px 2.5px;
+  transition: transform 0.3s;
+}
+
+.slide:hover {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.img-box {
+  width: 24vw;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  padding: 0 30px;
+  outline: none;
+  z-index: 2;
+}
+
+.control:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.prev {
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.next {
+  right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .img-box {
+    width: 32vw;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .img-box {
+    width: 49vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .img-box {
+    width: 99vw;
+  }
+}

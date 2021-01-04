@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #d8d3cd;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b262c;
+}
+
+.info-container {
+    text-align: center;
+    width: 650px;
+}
+
+@media screen and (max-width: 700px) {
+    .info-container {
+        width: 90vmin;
+    }
+
+    .difficulty-label {
+        display: none;
+    }
+}
+
+.header {
+    border: 1px solid;
+    padding: 50px 0 30px;
+}
+
+.header h1 {
+    font-family: 'Press Start 2P', cursive;
+    line-height: 2;
+    letter-spacing: 10px;
+}
+
+.header p {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1.4rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.message {
+    font-size: 1.6rem;
+}
+
+.difficulty-controls * {
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+.difficulty {
+    width: 200px;
+    height: 30px;
+    background-color: transparent;
+    /* letter-spacing: 0.9px; */
+}
+
+option {
+    background-color: #1b262c !important;
+}
+
+.trackers {
+    display: flex;
+}
+
+.trackers > * {
+    border: 1px solid;
+    flex: 1;
+    font-size: 1.5rem;
+    padding: 8px 0;
+}
+
+.replay-button {
+    background-color: #1b262c;
+    outline: none;
+}
+
+.replay-button:hover {
+    background-color:  #d8d3cd;
+    cursor: pointer;
+}
+
+.replay-button:hover i {
+    color: #1b262c;
+}
+
+.board {
+    padding: 5px;
+    border: 1px solid #d8d3cd;
+}
+  
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 0.5px solid #d8d3cd;
+    background-color: #1b262c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+}
+
+.cell:hover {
+    cursor: default;
+}
+
+.cell.start-cell i {
+    color: green;
+}
+
+.cell.hidden {
+    background-color: #d8d3cd;
+    border: 0.5px solid #1b262c;
+}
+
+.cell.hidden:hover {
+    background-color: #797a7e;
+}
+
+.cell.flag i {
+    color: red;
+    font-size: 1.5rem;
+}
